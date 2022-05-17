@@ -4,7 +4,8 @@
   "info": {
     "singularName": "blog",
     "pluralName": "blogs",
-    "displayName": "Blog"
+    "displayName": "Blog",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,23 +13,42 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "createdby": {
+    "subTitle": {
       "type": "string"
     },
     "description": {
-      "type": "richtext"
+      "type": "text"
     },
-    "file": {
+    "image": {
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ],
       "type": "media",
       "multiple": false
+    },
+    "source": {
+      "type": "string"
+    },
+    "createdby": {
+      "type": "string",
+      "required": true
+    },
+    "readMoreUrl": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "news",
+        "blog"
+      ],
+      "required": true
+    },
+    "tag": {
+      "type": "json"
     }
   }
 }
