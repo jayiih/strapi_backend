@@ -17,7 +17,7 @@
       "required": true
     },
     "subTitle": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
       "type": "media",
