@@ -19,15 +19,13 @@
     "subTitle": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
-    },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "source": {
       "type": "string"
@@ -49,6 +47,9 @@
     },
     "tag": {
       "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
