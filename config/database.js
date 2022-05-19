@@ -1,3 +1,6 @@
+const fs = require("fs");
+
+
 module.exports = ({ env }) => ({
   defaultConnection: "default",
   connection: {
@@ -9,6 +12,10 @@ module.exports = ({ env }) => ({
       user: env("DATABASE_USERNAME"),
       password: env("DATABASE_PASSWORD"),
       schema: env("DATABASE_SCHEMA"),
+      ssl: {
+    cert: fs.readFileSync("/var/www/html/certi.pem"),
+    rejectUnauthorized: true,
+  },
     },
   },
 });
