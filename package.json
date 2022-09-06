@@ -7,6 +7,7 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
+    "start-prod": "NODE_ENV=production strapi start",
     "strapi": "strapi"
   },
   "devDependencies": {},
@@ -15,6 +16,7 @@
     "@strapi/plugin-users-permissions": "4.1.11",
     "@strapi/strapi": "4.1.11",
     "better-sqlite3": "7.4.6",
+    "flag": "^5.0.1",
     "pg": "^8.7.3"
   },
   "author": {

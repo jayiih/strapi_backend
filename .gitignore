@@ -94,8 +94,6 @@ logs
 results
 node_modules
 .node_history
-config/database.js
-/config/database.js
 
 ############################
 # Tests
@@ -114,3 +112,4 @@ exports
 *.cache
 build
 .strapi-updater.json
+public/uploads/*
